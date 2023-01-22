@@ -94,6 +94,7 @@
             this.gitLink.TabStop = true;
             this.gitLink.Text = "LVNDev Github";
             this.gitLink.VisitedLinkColor = System.Drawing.Color.White;
+            this.gitLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.gitLink_LinkClicked);
             // 
             // saveBtn
             // 

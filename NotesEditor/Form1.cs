@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -71,6 +72,12 @@ namespace NotesEditor
                 createTxtbox.Text = table.Rows[index].ItemArray[0].ToString();
                 txtEditor.Text = table.Rows[index].ItemArray[1].ToString();
             }
+        }
+
+        private void gitLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            ProcessStartInfo sInfo = new ProcessStartInfo("https://github.com/LvnDev/NotesEditor");
+            Process.Start(sInfo);
         }
     }
 }
